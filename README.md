@@ -37,22 +37,6 @@ changhengwei.github.io/
     └── img/               profile.jpg, favicon.svg, certs/, events/
 ```
 
-## Adding content
-
-Edit the matching file in `assets/js/data/` and copy an existing object with a new `id`. Images go under `assets/img/`. The counters and the detail pages pick up new entries on the next page load, so no numbers need editing by hand.
-
-## Run it locally
-
-```bash
-python -m http.server 8000
-```
-
-Open `http://localhost:8000`. Opening `index.html` straight from disk works too, though the Copy button and the mailbox module need the local server.
-
-## Hosting
-
-GitHub Pages serves this repository from the `main` branch at the root. The repository name has to be `changhengwei.github.io` for the URL above to work. Push a changed file and the site updates after the Pages rebuild. `assets/audio/background-music.mp3` needs to be in the repo or the music button stays silent.
-
 ## Contact
 
 Email me at `changhengwei@graduate.utm.my`. My code is on [GitHub](https://github.com/changhengwei) and my profile is on [LinkedIn](https://www.linkedin.com/in/chang-heng-wei-181b88375/). I'm open to internships and questions about data work.

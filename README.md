@@ -22,12 +22,12 @@ It's plain HTML, CSS and JavaScript, so GitHub Pages serves the files as they ar
 
 ```
 changhengwei.github.io/
+├── index.html
 ├── README.md
 ├── style.css
 └── assets/
     ├── html/
     │   ├── event.html
-    │   ├── index.html
     │   └── project.html
     ├── js/
     │   ├── animation/     fun-bundle.js

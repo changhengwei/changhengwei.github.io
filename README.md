@@ -1,16 +1,16 @@
 # Chang Heng Wei
 
-I'm a data engineering student at Universiti Teknologi Malaysia (UTM). I write small programs and data systems, and I keep notes on how I built them so I can retrace a decision months later. Most of it so far is coursework and scripts.
+I'm a data engineering student at Universiti Teknologi Malaysia (UTM). I write small programs and data systems, and I keep notes on how I built them so I can retrace a decision months later.
 
 This repository is my e-portfolio, published at [changhengwei.github.io](https://changhengwei.github.io). I built it for my SCST1133 e-portfolio assignment and add to it when I finish a course or go to a talk worth writing up.
 
 ## What's on the site
 
-The home page opens with an intro, a photo, five skill boxes and a counter row. The counter takes its numbers from the data files, so it currently reads 0 projects, 1 event and 2 certificates.
+The home page opens with an intro, a photo, five skill boxes and a counter row. The counter takes its numbers from the html files.
 
-The five skill boxes are Python, SQL, Git, GitHub and VS Code. Projects is empty; I haven't put a full project out yet. Events has one write-up: an industrial talk on Creative Thinking by Dr. Zahari Othman at UTM Skudai on 3 November 2026. Its detail page has four photos and a written reflection on how those ideas apply to cloud architecture and data pipelines. Certificates holds two courses I finished in 2026: CS50's Introduction to Programming with Python and CS50's Introduction to Databases with SQL. Each card shows the certificate scan and a short line on what the course lets me do.
+The five skill boxes are Python, SQL, Git, GitHub and VS Code.
 
-Contact has my email, GitHub and LinkedIn. Clicking the email box does nothing; the Copy button inside copies the address to the clipboard.
+Contact has my email, GitHub and LinkedIn.
 
 Two circle buttons in the top right control the theme and the background music. Light mode and music on are the defaults on a first visit. Both choices are saved in `localStorage`, so the event and project pages use the same settings. Browsers block sound until the first click, so playback starts then.
 
@@ -22,24 +22,20 @@ It's plain HTML, CSS and JavaScript, so GitHub Pages serves the files as they ar
 
 ```
 changhengwei.github.io/
-├── index.html
-├── event.html
-├── project.html
 ├── README.md
-├── .gitignore
+├── style.css
 └── assets/
-    ├── css/style.css
+    ├── html/
+    │   ├── event.html
+    │   ├── index.html
+    │   └── project.html
     ├── js/
+    │   ├── animation/     fun-bundle.js
     │   ├── app.js
-    │   ├── data/          projects.js, events.js, certificates.js
-    │   └── fun/           fun-bundle.js
+    │   └── subpages/      projects.js, events.js, certificates.js
     ├── audio/             background-music.mp3
     └── img/               utm-logo.png, profile.jpg, favicon.svg, certs/, events/
 ```
-
-## Adding content
-
-Edit the matching file in `assets/js/data/` and copy an existing object with a new `id`. Images go under `assets/img/`. The counters and the detail pages pick up new entries on the next page load, so no numbers need editing by hand.
 
 ## Run it locally
 
@@ -51,7 +47,7 @@ Open `http://localhost:8000`. Opening `index.html` straight from disk works too,
 
 ## Hosting
 
-GitHub Pages serves this repository from the `main` branch at the root. The repository name has to be `changhengwei.github.io` for the URL above to work. Push a changed file and the site updates after the Pages rebuild. `assets/audio/background-music.mp3` needs to be in the repo or the music button stays silent.
+GitHub Pages serves this repository from the `main` branch at the root.
 
 ## Contact
 
